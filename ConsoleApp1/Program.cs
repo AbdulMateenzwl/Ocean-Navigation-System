@@ -11,6 +11,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //chk
             List<Ship> ship_list = new List<Ship>();
             char op;
             while(true)
