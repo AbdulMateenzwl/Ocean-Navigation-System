@@ -19,9 +19,18 @@ namespace ConsoleApp1.BL
             X = x;
             Y = y;
         }
-        public void display()
+        public void replace(Angle x, Angle y)
+        {
+            this.X=x;
+            this.Y=y;
+        }
+        public void display_angle()
         {
             Console.WriteLine("Ship is at "+X.degree+"\u00b0"+X.minutes+"'"+X.direction+" and " + Y.degree + "\u00b0" + Y.minutes + "'" + Y.direction);
+        }
+        public void display_name()
+        {
+            Console.WriteLine("THe name of the ship is "+name+" .");
         }
     }
 }
