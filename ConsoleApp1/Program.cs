@@ -16,7 +16,7 @@ namespace ConsoleApp1
             char op;
             while(true)
             {
-                op = Ui.menu();
+                op = Menu_Ui.menu();
                 Console.Clear();
                 if(op =='1')
                 {

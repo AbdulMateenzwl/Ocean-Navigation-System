@@ -8,8 +8,23 @@ namespace ConsoleApp1.BL
 {
     internal class Angle
     {
-        public int degree;
-        public float minutes;
-        public char direction;
+        private int degree;
+        private float minutes;
+        private char direction;
+        public int Degree
+        {
+            get { return degree; }
+            set { degree = value; }
+        }
+        public float Minutes
+        {
+            get { return minutes; }
+            set { minutes = value; }
+        }
+        public char Direction
+        {
+            get { return this.direction; }
+            set { this.direction = value; }
+        }
     }
 }

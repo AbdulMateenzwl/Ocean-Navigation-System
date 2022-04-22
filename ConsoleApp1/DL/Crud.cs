@@ -14,34 +14,34 @@ namespace ConsoleApp1.DL
         {
             for (int i = 0; i < ship_list.Count; i++)
             {
-                if (name == ship_list[i].name)
+                if (name == ship_list[i].Name)
                 {
                     return true;
                 }
             }
             return false;
         }
-        public static int index(string name)
+        public static Ship index(string name)
         {
             for (int i = 0; i < ship_list.Count; i++)
             {
-                if (name == ship_list[i].name)
+                if (name == ship_list[i].Name)
                 {
-                    return i;
+                    return ship_list[i];
                 }
             }
-            return -1;
+            return null;
         }
-        public static int check_ship(Ship ship)
+        public static Ship check_ship(Angle x,Angle y)
         {
             for (int i = 0; i < ship_list.Count; i++)
             {
-                if (ship.X == ship_list[i].X && ship.Y==ship_list[i].Y)
+                if (x.Degree == ship_list[i].x.Degree && y.Degree==ship_list[i].y.Degree && x.Minutes == ship_list[i].x.Minutes && y.Minutes == ship_list[i].y.Minutes && x.Direction == ship_list[i].x.Direction && y.Direction == ship_list[i].y.Direction)
                 {
-                    return i;
+                    return ship_list[i];
                 }
             }
-            return -1;
+            return null;
         }
     }
 }
