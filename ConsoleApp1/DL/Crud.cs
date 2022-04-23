@@ -10,17 +10,6 @@ namespace ConsoleApp1.DL
     internal class Crud
     {
         public static List<Ship> ship_list = new List<Ship>();
-        public static bool if_exists(string name)
-        {
-            for (int i = 0; i < ship_list.Count; i++)
-            {
-                if (name == ship_list[i].Name)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
         public static Ship index(string name)
         {
             for (int i = 0; i < ship_list.Count; i++)
@@ -42,6 +31,10 @@ namespace ConsoleApp1.DL
                 }
             }
             return null;
+        }
+        public static void add_ship(Ship input)
+        {
+            ship_list.Add(input);
         }
     }
 }

@@ -20,20 +20,20 @@ namespace ConsoleApp1
                 Console.Clear();
                 if(op =='1')
                 {
-                    Ship output = Ui.take_input();
-                    Crud.ship_list.Add(output);
+                    Ship output = Ship_Ui.take_input();
+                    Crud.add_ship(output);
                 }
                 else if(op =='2')
                 {
-                    Ui.position();
+                    Ship_Ui.position();
                 }
                 else if(op=='3')
                 {
-                    Ui.serial_num();
+                    Ship_Ui.serial_num();
                 }
                 else if(op=='4')
                 {
-                    Ui.change_position();
+                    Ship_Ui.change_position();
                 }
                 else if(op=='5')
                 {

@@ -8,7 +8,7 @@ using ConsoleApp1.DL;
 
 namespace ConsoleApp1.UI
 {
-    internal class Ui
+    internal class Ship_Ui
     {
         public static Ship take_input()
         {
@@ -42,7 +42,7 @@ namespace ConsoleApp1.UI
             }
             else
             {
-                output.display_angle();
+                display_angle(output);
             }
         }
         public static void serial_num()
@@ -64,7 +64,7 @@ namespace ConsoleApp1.UI
             Ship output = Crud.check_ship(input,input2);
             if(output != null)
             {
-                output.display_name();
+                display_name(output);
             }
             else
             {
@@ -100,6 +100,13 @@ namespace ConsoleApp1.UI
                 Console.WriteLine("Postion has been changed .");
             }
         }
-        
+        public static void display_angle(Ship output)
+        {
+            Console.WriteLine("Ship is at " + output.x.Degree + "\u00b0" + output.x.Minutes + "'" + output.x.Direction + " and " + output.y.Degree + "\u00b0" + output.y.Minutes + "'" + output.y.Direction);
+        }
+        public static void display_name(Ship output)
+        {
+            Console.WriteLine("THe name of the ship is " + output.Name + " .");
+        }
     }
 }

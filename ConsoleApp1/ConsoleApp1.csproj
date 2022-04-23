@@ -48,7 +48,8 @@
     <Compile Include="DL\Crud.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Ui.cs" />
+    <Compile Include="UI\Menu_Ui.cs" />
+    <Compile Include="UI\Ship_Ui.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

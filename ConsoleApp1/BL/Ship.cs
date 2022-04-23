@@ -12,7 +12,6 @@ namespace ConsoleApp1.BL
         private Angle X;
         private Angle Y;
         public Ship() { }
-
         public Ship(string name, Angle x, Angle y)
         {
             this.name = name;
@@ -39,13 +38,6 @@ namespace ConsoleApp1.BL
             this.X=x;
             this.Y=y;
         }
-        public void display_angle()
-        {
-            Console.WriteLine("Ship is at "+X.Degree+"\u00b0"+X.Minutes+"'"+X.Direction+" and " + Y.Degree + "\u00b0" + Y.Minutes + "'" + Y.Direction);
-        }
-        public void display_name()
-        {
-            Console.WriteLine("THe name of the ship is "+name+" .");
-        }
+        
     }
 }
